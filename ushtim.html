@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <center><button id="btn" >change color</button></center>
+    <center><button id="btn2" >reset</button></center>
+    
+
+
+
+
+
+    <script>
+        const button2 = document.querySelector('#btn2');
+        const button = document.querySelector('#btn');
+        const element2 = document.querySelector('#body');
+       
+        
+        button.onclick = color;
+        button2.onclick = color2;
+
+
+         function color(){
+          element2.style.backgroundColor = 'black';
+          button2.style.backgroundColor = 'white';
+          button.style.backgroundColor = 'white';
+          button.style.color = 'black';
+          button2.style.color = 'black';
+        }
+        function color2(){
+          element2.style.backgroundColor = 'white';
+          button.style.backgroundColor = 'black';
+          button2.style.backgroundColor = 'black';
+          button.style.color = 'white';
+          button2.style.color = 'white';
+        }
+
+
+
+
+    </script>
+</body>
+</html>
